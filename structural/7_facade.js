@@ -1,3 +1,4 @@
+// класс фасад
 class Complaints {
     constructor () {
         this.complaints = [];
