@@ -1,1 +1,3 @@
 // класс flyweight
+
+class 
