@@ -18,6 +18,8 @@ class CarFactory {
         
         const newCar = new Car(model, price);
 
+        this.cars.push(newCar);
+
         return newCar;
     }
 
@@ -25,3 +27,14 @@ class CarFactory {
         return this.cars.find(car => car.model === model);
     }
 }
+
+const factory =  new CarFactory;
+
+const bmwX6 = factory.create('bmw', 50000);
+const audi = factory.create('audi', 20000);
+const bmwX3 = factory.create('bmw', 10000);
+
+
+console.log(bmwX6)
+console.log(bmwX3)
+
