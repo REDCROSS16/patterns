@@ -17,7 +17,6 @@ const proxiedFetch = new Proxy(networkFetch, {
     }
 });
 
-
 console.log(proxiedFetch('mail.ru'))
 console.log(proxiedFetch('angular.io'))
 console.log(proxiedFetch('mail.ru'))
